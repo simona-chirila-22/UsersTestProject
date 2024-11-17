@@ -69,9 +69,14 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     // Koin for Android
-
     implementation(libs.koin.androidx.compose)
     implementation(libs.koin.androidx)
+
+    // Retrofit
+    implementation(libs.bundles.retrofit)
+
+    // Coroutines
+    implementation(libs.bundles.coroutines)
 
     //testing
     testImplementation(libs.junit)
