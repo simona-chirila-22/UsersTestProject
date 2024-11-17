@@ -1,4 +1,4 @@
-package ro.simona.userstestproject
+package ro.simona.userstestproject.ui.screens
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
