@@ -13,3 +13,7 @@ data class NameDto(
     @SerializedName("last")
     val last: String,
 )
+
+fun NameDto.toFullName(): String {
+    return "$first $last"
+}
