@@ -1,8 +1,5 @@
 package ro.simona.userstestproject.domain
 
-import ro.simona.userstestproject.data.models.UserDto
-
 interface UsersRepository {
-
-    suspend fun getUsers(): List<UserDto>
+    suspend fun getUsers(page: Int, usersPerPage: Int): AppResult<List<UserEntity>>
 }
