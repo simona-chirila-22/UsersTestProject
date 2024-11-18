@@ -1,5 +1,5 @@
 [versions]
-agp = "8.5.0"
+agp = "8.5.2"
 kotlin = "1.9.0"
 coreKtx = "1.15.0"
 junit = "4.13.2"
@@ -7,15 +7,16 @@ junitVersion = "1.2.1"
 espressoCore = "3.6.1"
 lifecycleRuntimeKtx = "2.8.7"
 activityCompose = "1.9.3"
-composeBom = "2024.04.01"
-koinAndroidx = "3.5.3"
+composeBom = "2024.11.00"
+koinAndroidx = "4.0.0"
 koinAndroidxComposeVersion = "4.0.0"
-retrofitcurlprinterVersion = "0.0.1"
 retrofitVersion = "2.11.0"
 converterGsonVersion = "2.9.0"
 converterScalarsVersion = "2.9.0"
 loggingInterceptorVersion = "5.0.0-alpha.7"
 kotlinxCoroutinesVersion = "1.8.0"
+pagingCompose = "3.3.4"
+pagingRuntime = "3.1.1"
 
 
 [libraries]
@@ -36,17 +37,17 @@ androidx-material3 = { group = "androidx.compose.material3", name = "material3" 
 koin-androidx = { module = "io.insert-koin:koin-android", version.ref = "koinAndroidx" }
 koin-androidx-compose = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koinAndroidxComposeVersion" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofitVersion" }
-retrofitCurlPrinter = { module = "com.github.tomasharkema:RetrofitCurlPrinter", version.ref = "retrofitcurlprinterVersion" }
 converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGsonVersion" }
 converter-scalars = { module = "com.squareup.retrofit2:converter-scalars", version.ref = "converterScalarsVersion" }
 logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "loggingInterceptorVersion" }
 kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesVersion" }
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesVersion" }
 kotlinx-coroutines-play-services = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-play-services", version.ref = "kotlinxCoroutinesVersion" }
-
+paging-compose = { module = "androidx.paging:paging-compose", version.ref = "pagingCompose" }
+paging-runtime = { module = "androidx.paging:paging-runtime", version.ref = "pagingRuntime" }
 
 [bundles]
-retrofit = ["retrofit", "converter-gson", "converter-scalars", "logging-interceptor", "retrofitCurlPrinter"]
+retrofit = ["retrofit", "converter-gson", "converter-scalars", "logging-interceptor"]
 coroutines = ["kotlinx-coroutines-android", "kotlinx-coroutines-core", "kotlinx-coroutines-play-services"]
 
 

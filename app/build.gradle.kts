@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "ro.simona.userstestproject"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "ro.simona.userstestproject"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -59,6 +59,10 @@ dependencies {
     // Jetpack Compose
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
+
+    //Paging
+    implementation(libs.paging.compose)
+    implementation(libs.paging.runtime)
 
     //UI
     implementation(libs.androidx.ui)
