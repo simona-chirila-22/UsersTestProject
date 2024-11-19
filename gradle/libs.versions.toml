@@ -19,6 +19,8 @@ pagingCompose = "3.3.4"
 pagingRuntime = "3.1.1"
 coilComposeVersion = "2.6.0"
 coilSvgVersion = "2.6.0"
+appcompat = "1.7.0"
+material = "1.12.0"
 
 
 [libraries]
@@ -49,6 +51,8 @@ paging-compose = { module = "androidx.paging:paging-compose", version.ref = "pag
 paging-runtime = { module = "androidx.paging:paging-runtime", version.ref = "pagingRuntime" }
 coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilComposeVersion" }
 coil-svg = { module = "io.coil-kt:coil-svg", version.ref = "coilSvgVersion" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 
 [bundles]
 retrofit = ["retrofit", "converter-gson", "converter-scalars", "logging-interceptor"]
@@ -59,4 +63,5 @@ coil = ["coil-compose", "coil-svg"]
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+android-library = { id = "com.android.library", version.ref = "agp" }
 

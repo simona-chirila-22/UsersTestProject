@@ -5,12 +5,12 @@ import org.koin.core.module.dsl.viewModel
 import org.koin.dsl.module
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import ro.simona.userstestproject.data.api.ApiService
-import ro.simona.userstestproject.data.repositoryimpl.UsersRepositoryImpl
-import ro.simona.userstestproject.domain.UsersConfig
-import ro.simona.userstestproject.domain.UsersRepository
-import ro.simona.userstestproject.domain.UsersUseCase
-import ro.simona.userstestproject.ui.viewmodels.UsersViewModel
+import ro.simona.data.api.ApiService
+import ro.simona.data.repositoryimpl.UsersRepositoryImpl
+import ro.simona.domain.repository.UsersRepository
+import ro.simona.domain.usecases.UsersUseCase
+import ro.simona.domain.utils.UsersConfig
+import ro.simona.presentation.viewmodels.UsersViewModel
 
 object AppModules {
 

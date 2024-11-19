@@ -50,6 +50,10 @@ android {
 }
 
 dependencies {
+    implementation(project(mapOf("path" to ":domain")))
+    implementation(project(mapOf("path" to ":data")))
+    implementation(project(mapOf("path" to ":presentation")))
+
     // AndroidX
     implementation(libs.androidx.core.ktx)
 
@@ -59,10 +63,6 @@ dependencies {
     // Jetpack Compose
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
-
-    //Paging
-    implementation(libs.paging.compose)
-    implementation(libs.paging.runtime)
 
     //UI
     implementation(libs.androidx.ui)

@@ -25,9 +25,9 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import org.koin.androidx.compose.koinViewModel
+import ro.simona.presentation.viewmodels.UsersViewModel
 import ro.simona.userstestproject.R
 import ro.simona.userstestproject.ui.theme.UsersTestProjectTheme
-import ro.simona.userstestproject.ui.viewmodels.UsersViewModel
 
 class MainActivity : ComponentActivity() {
 
@@ -45,7 +45,8 @@ class MainActivity : ComponentActivity() {
                             colors = TopAppBarDefaults.topAppBarColors(
                                 containerColor = colorResource(R.color.app_red),
                                 titleContentColor = colorResource(R.color.white),
-                                actionIconContentColor = colorResource(R.color.white)
+                                actionIconContentColor = colorResource(R.color.white),
+                                navigationIconContentColor = colorResource(R.color.white),
                             ),
                             navigationIcon = {
                                 IconButton(onClick = { /* Toggle drawer */ }) {

@@ -28,9 +28,9 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
+import ro.simona.domain.entities.UserEntity
+import ro.simona.presentation.utils.DateGenerator
 import ro.simona.userstestproject.R
-import ro.simona.userstestproject.domain.UserEntity
-import ro.simona.userstestproject.ui.utils.DateGenerator
 
 @Composable
 fun UsersList(users: List<UserEntity>, onAdvance: () -> Unit, modifier: Modifier) {
