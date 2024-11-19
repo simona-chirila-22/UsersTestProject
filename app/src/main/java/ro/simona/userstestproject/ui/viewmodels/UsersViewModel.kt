@@ -21,7 +21,7 @@ class UsersViewModel(private val usersUseCase: UsersUseCase) : ViewModel(), Koin
         loadUsers()
     }
 
-    fun loadUsers() {
+    private fun loadUsers() {
         viewModelScope.launch {
             _state.update { it.copy(isLoading = true, isError = false) }
 
@@ -51,12 +51,6 @@ class UsersViewModel(private val usersUseCase: UsersUseCase) : ViewModel(), Koin
     fun shouldAdvance() = usersUseCase.advance()
 
     fun shouldRetry() = usersUseCase.advance()
-
-    fun handleError(error: Throwable) {
-        viewModelScope.launch {
-            _state.update { it.copy(isError = true, errorMessage = error.message) }
-        }
-    }
 }
 
 data class UsersScreenState(

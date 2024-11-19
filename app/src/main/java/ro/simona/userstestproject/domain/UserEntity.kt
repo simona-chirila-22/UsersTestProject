@@ -6,6 +6,6 @@ data class UserEntity(
     val location: String,
     val pictureUrl: String,
     val date: String,
-    val hasAttachment: Boolean = false,
+    val hasAttachment: Boolean = true, //modified this to true only for ui purposes
     val isFavorite: Boolean = false,
 )

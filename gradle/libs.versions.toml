@@ -17,6 +17,8 @@ loggingInterceptorVersion = "5.0.0-alpha.7"
 kotlinxCoroutinesVersion = "1.8.0"
 pagingCompose = "3.3.4"
 pagingRuntime = "3.1.1"
+coilComposeVersion = "2.6.0"
+coilSvgVersion = "2.6.0"
 
 
 [libraries]
@@ -45,10 +47,13 @@ kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-c
 kotlinx-coroutines-play-services = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-play-services", version.ref = "kotlinxCoroutinesVersion" }
 paging-compose = { module = "androidx.paging:paging-compose", version.ref = "pagingCompose" }
 paging-runtime = { module = "androidx.paging:paging-runtime", version.ref = "pagingRuntime" }
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilComposeVersion" }
+coil-svg = { module = "io.coil-kt:coil-svg", version.ref = "coilSvgVersion" }
 
 [bundles]
 retrofit = ["retrofit", "converter-gson", "converter-scalars", "logging-interceptor"]
 coroutines = ["kotlinx-coroutines-android", "kotlinx-coroutines-core", "kotlinx-coroutines-play-services"]
+coil = ["coil-compose", "coil-svg"]
 
 
 [plugins]

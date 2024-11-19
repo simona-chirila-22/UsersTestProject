@@ -82,6 +82,9 @@ dependencies {
     // Coroutines
     implementation(libs.bundles.coroutines)
 
+    // Coil
+    implementation(libs.bundles.coil)
+
     //testing
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

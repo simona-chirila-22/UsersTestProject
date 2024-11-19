@@ -2,4 +2,7 @@
     <string name="app_name">Users Test Project</string>
 
     <string name="users_screen">Users</string>
+    <string name="users_description"> %s years from %s</string>
+    <string name="retry">Retry</string>
+    <string name="unknown_error">Unknown error</string>
 </resources>
